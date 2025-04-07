@@ -53,14 +53,9 @@ namespace LeaveService.Controllers
         {
             try
             {
-                //var tokens = HttpContext.Request.Headers["Authorization"].ToString().Split(" ")[1];
-                //string role = await GetJwtTokenClaim(tokens, System.Security.Claims.ClaimTypes.Role);
-
+              
                 TokenModel token = GetTokenDataModel(HttpContext);
-                //int days = (leave.StartDate - leave.EndDate).Days;
-                //var LeaveRequestPerUser = _context.LeaveBalance.Where(x => x.EmployeeId == leave.EmployeeId).FirstOrDefault();
-                //int TotalLeave = LeaveRequestPerUser.TotalLeaves;
-                //int RemainingLeave =  TotalLeave - LeaveRequestPerUser.UsedLeaves;
+                
                 
                 if (token != null)
                 {
